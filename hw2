@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Feb  2 02:32:51 2018
+
+@author: Santhosh V
+"""
+
+import math# we import math package to use the functon math.pow
+def qstn4(x,y):
+    list1 = []
+    for i in range(2,x+1):
+        for j in range(2,y+1):    
+            list1.append(int(math.pow(i,j)))
+        list1.sort() 
+       # print(list1)
+        list_ =[] # this is a new list to store the solution        
+        for i in (list1):
+            if i not in list_:
+               list_.append(i)
+        z = len(list_)
+    print("output is:",z)
+   
+    
+          
+qstn4(5,5)
+qstn4(2,3)

@@ -1,0 +1,24 @@
+# Advanced-python-Programming-CS491-
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Feb  2 02:02:51 2018
+
+@author: Santhosh V
+"""
+"""
+This is a function that calculates the squares and displays the output
+"""
+def Question1(x):
+    n = len(x)
+    print("Output is:",end='')
+    for i in range(n):
+        solution=int(num[i])*int(num[i])
+        print(solution,end='')
+
+num = input("Please enter a number:")
+
+if num.isnumeric() == 1:#chechs the condition where the given no is integer or not
+    Question1(num)# control moves to the function Question1
+else:
+     print("Enter a numerical value:")#if we enter a value other than integer it asks to enter a numerical value.
+
